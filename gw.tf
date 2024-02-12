@@ -7,7 +7,7 @@ resource "aws_internet_gateway" "igw" {
 }
 
 resource "aws_eip" "ngw_eip" {
-  domain = vpc
+  domain = "vpc"
 
   tags = {
     Name = "roboshop-${var.ENV}-ngw-eip"
